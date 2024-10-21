@@ -136,14 +136,4 @@ hdfs dfs -mkdir /user
 hdfs dfs -mkdir /user/hduser
 hdfs dfs -put hadoop-2.10.2.tar.gz /user/hduser
  port:50070
-hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-*examples*.jar pi 5 10
 
-
-
-
-<----- Troubleshooting ----->
-# if you are getting >>>  ..WARN.util.NativeCodeLoader: Unable to load native-hadoop library
-Edit the bashrc file
-nano ~/.bashrc
-export HADOOP_HOME_WARN_SUPPRESS=1
-export HADOOP_ROOT_LOGGER="WARN,DRFA"
